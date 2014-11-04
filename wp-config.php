@@ -22,13 +22,13 @@ define('WP_ENV', 'development');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'inno_website');
+define('DB_NAME', 'db_name');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'username');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -41,8 +41,8 @@ define('DB_COLLATE', '');
 
 
 
-define('WP_HOME', 'http://dev.inno.com/');
-define('WP_SITEURL', 'http://dev.inno.com/');
+define('WP_HOME', 'http://yoursite.com/');
+define('WP_SITEURL', 'http://yoursite.com/');
 
 
 /**#@+
