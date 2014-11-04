@@ -1,0 +1,20 @@
+//.container {
+//    @include outer-container;
+//}
+//.row{
+//    @include span-columns(12 of 12);
+//    @include media($tablet-screen){
+//        @include pad(1%);
+//    }
+//
+//    .gutter-sizer {
+//        width: 3%;
+//
+//        @include media($tablet-screen) {
+//            width: 2%;
+//        }
+//        @include media($desktop-sm-screen) {
+//            width: 1.5%;
+//        }
+//    }
+//}

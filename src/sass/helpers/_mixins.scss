@@ -1,0 +1,209 @@
+//@mixin rounded($radius: 0.5em) {
+//    -webkit-border-radius: $radius;
+//    border-radius: $radius;
+//}
+//
+//@mixin roundedLeft($radius: 0.5em) {
+//    -webkit-border-radius: $radius 0 0 $radius;
+//    border-radius: $radius 0 0 $radius;
+//}
+//
+//@mixin roundedRight($radius: 0.5em) {
+//    -webkit-border-radius: 0 $radius $radius 0;
+//    border-radius: 0 $radius $radius 0;
+//}
+//
+//@mixin transitionCustom($selector: all, $time: 0.5s, $timing-function: linear) {
+//    -webkit-transition: $selector $time $timing-function;
+//    -moz-transition: $selector $time $timing-function;
+//    -ms-transition: $selector $time $timing-function;
+//    -o-transition: $selector $time $timing-function;
+//    transition: $selector $time $timing-function;
+//}
+//
+//@mixin rotation($deg) {
+//    -moz-transform: rotate($deg);
+//    -webkit-transform: rotate($deg);
+//    -o-transform: rotate($deg);
+//    -ms-transform: rotate($deg);
+//    transform: rotate($deg);
+//}
+//
+//@mixin triangle($width, $height, $color, $orientation) {
+//    width: 0px;
+//    height: 0px;
+//    border-style: solid;
+//    @if $orientation == left {
+//        /*$height: ($height/2);*/
+//        border-width: 0 $width $height 0;
+//        border-color: $color $color transparent transparent;
+//
+//    } @else if $orientation == right {
+//        /*    $height: ($height/2);*/
+//        border-width: $height $width 0 0;
+//        border-color: $color transparent;
+//
+//    } @else if $orientation == up {
+//        /*$width: ($width/2);*/
+//        border-width: 0 $height $width 0;
+//        border-color: transparent transparent $color $color;
+//    } @else {
+//        $width: ($width/2);
+//        border-width: $height $width 0 $width;
+//        border-color: $color transparent transparent transparent;
+//    }
+//}
+//
+//@mixin fold($color, $bg, $size, $position: right) {
+//    &:before {
+//        content: "";
+//        position: absolute;
+//        top: 0;
+//        @if($position == left){
+//            left: 0;
+//            border-width: $size $size 0 0;
+//            border-color: $bg $color;
+//        } @else if $position == right{
+//            right: 0;
+//            border-width: 0 $size $size 0;
+//            border-color: $bg $bg $color $color;
+//        }
+//        border-style: solid;
+//        background: $color;
+//        display: block;
+//        width: 0;
+//    }
+//}
+//
+//@mixin profilePic($padding, $diameter) {
+//    .profile-pic-wrapper {
+//        background-color: $lighter-blue;
+//        @include rounded(50%);
+//        padding: $padding;
+//        height: $diameter;
+//        width: $diameter;
+//        float: left;
+//    }
+//    .profile-pic {
+//        height: $diameter - (2* $padding);
+//        width: $diameter - (2* $padding);
+//        @include rounded(50%);
+//    }
+//}
+//
+//@mixin transparent($amount) {
+//    opacity: $amount;
+//    filter: alpha(opacity=($amount *100)); /* For IE8 and earlier */
+//}
+//
+//@mixin goldbutton() {
+//    border: none;
+//    background-color: $gold;
+//    color: #fff;
+//    padding: 0.6em .92em;
+//    @include rounded(0.1em);
+//    outline: none;
+//    margin: 0;
+//    cursor: pointer;
+//
+//    i {
+//        padding-left: 0.35em;
+//        font-size: 0.7em;
+//    }
+//
+//    &:hover {
+//        background-color: $hover-gold;
+//    }
+//}
+//
+//@mixin gradient($gradient-top, $gradient-bottom) {
+//    background: $gradient-top; /* Old browsers */
+//    background: -moz-linear-gradient(top, $gradient-top 0%, $gradient-bottom 100%); /* FF3.6+ */
+//    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $gradient-top), color-stop(100%, $gradient-bottom)); /* Chrome,Safari4+ */
+//    background: -webkit-linear-gradient(top, $gradient-top 0%, $gradient-bottom 100%); /* Chrome10+,Safari5.1+ */
+//    background: -o-linear-gradient(top, $gradient-top 0%, $gradient-bottom 100%); /* Opera 11.10+ */
+//    background: -ms-linear-gradient(top, $gradient-top 0%, $gradient-bottom 100%); /* IE10+ */
+//    background: linear-gradient(to bottom, $gradient-top 0%, $gradient-bottom 100%); /* W3C */
+//}
+//
+//@mixin hoverZoom($to: 110%, $time: .5s) {
+//    @include transition(background, $time);
+//    background-size: 100% !important;
+//    background-position: center;
+//    &:hover {
+//        background-size: $to !important;;
+//    }
+//}
+//
+//@mixin aspectRatio($percentage: 75%) {
+//    &:before {
+//        margin-top: $percentage;
+//        display: block;
+//        content: "";
+//    }
+//    .content {
+//        position: absolute;
+//    }
+//}
+//
+//@mixin animate($name, $sec: 1s, $type: linear, $duration: infinite) {
+//
+//    -webkit-animation: $name $sec $type $duration;
+//    -moz-animation: $name $sec $type $duration;
+//    animation: $name $sec $type $duration;
+//
+//}
+//
+//@mixin last-child() {
+//    &:last-child {
+//        margin-right: auto;
+//    }
+//}
+//
+//@mixin omega-reset($nth) {
+//    &:nth-child(#{$nth}) {
+//        margin-right: flex-gutter();
+//    }
+//    &:nth-child(#{$nth}+1) {
+//        clear: none
+//    }
+//}
+//
+//@mixin hide($screen: 'mobile') {
+//    @if $screen == 'mobile' {
+//        display: none !important;
+//
+//        @include media($tablet-screen) {
+//            display: block !important;
+//        }
+//        @include media($desktop-sm-screen) {
+//            display: block !important;
+//        }
+//    } @else if $screen == 'tablet' {
+//        display: block !important;
+//
+//        @include media($mobile-sm-screen) {
+//            display: block !important;
+//        }
+//        @include media($tablet-screen) {
+//            display: none !important;
+//        }
+//        @include media($desktop-sm-screen) {
+//            display: block !important;
+//        }
+//    } @else if $screen == 'desktop' {
+//        display: block !important;
+//
+//        @include media($mobile-sm-screen) {
+//            display: block !important;
+//        }
+//        @include media($tablet-screen) {
+//            display: block !important;
+//        }
+//        @include media($desktop-sm-screen) {
+//            display: none !important;
+//        }
+//    } @else {
+//        display: none !important;
+//    }
+//}

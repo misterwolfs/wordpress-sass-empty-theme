@@ -1,0 +1,56 @@
+//.border-box{
+//  -webkit-box-sizing: border-box;
+//  -moz-box-sizing: border-box;
+//  box-sizing: border-box;
+//}
+//
+//.clear{
+//  clear: both;
+//}
+//
+//.hidden {
+//    display: none !important;
+//}
+//
+//.more {
+//
+//  @include media($mobile-landscape-width) {
+//    font-size: 1.2em;
+//  }
+//
+//}
+//
+//.desktop-hidden {
+//    @include media($mobile-sm-screen){
+//        display: block !important;
+//    }
+//    @include media($tablet-screen){
+//        display: block !important;
+//    }
+//    @include media($desktop-sm-screen){
+//        display: none !important;
+//    }
+//}
+//
+//.tablet-hidden {
+//    @include media($mobile-sm-screen){
+//        display: block !important;
+//    }
+//    @include media($tablet-screen){
+//        display: none !important;
+//    }
+//    @include media($desktop-sm-screen){
+//        display: block !important;
+//    }
+//}
+//.mobile-hidden {
+//    @include media($mobile-sm-screen){
+//        display: none !important;
+//    }
+//    @include media($tablet-screen){
+//        display: block !important;
+//    }
+//    @include media($desktop-sm-screen){
+//        display: block !important;
+//    }
+// }

@@ -1,0 +1,101 @@
+//@font-face {
+//    font-family: 'hermes';
+//    src: url('../fonts/hermes-bold-webfont.eot');
+//    src: url('../fonts/hermes-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hermes-bold-webfont.svg#../fonts/hermesregular') format('svg'), url('../fonts/hermes-bold-webfont.woff') format('woff'), url('../fonts/hermes-bold-webfont.ttf') format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'hermes-regular';
+//    src: url('../fonts/hermes-regular-webfont.eot');
+//    src: url('../fonts/hermes-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hermes-regular-webfont.svg#../fonts/hermesregular') format('svg'), url('../fonts/hermes-regular-webfont.woff') format('woff'), url('../fonts/hermes-regular-webfont.ttf') format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+//
+//body {
+//    font-family: "ff-meta-web-pro", sans-serif;
+//    color: $white;
+//    font-size: 13px;
+//}
+//
+//h1, h2, h3, h4 {
+//    font-family: "hermes", sans-serif;
+//    font-weight: normal;
+//    color: $gold;
+//}
+//
+//h1 {
+//    font-size: 2.6em;
+//
+//}
+//
+//h2 {
+//    font-size: 2.45em;
+//    line-height: 1.2em;
+//    @include media($mobile-lg-screen) {
+//        font-size: 3em;
+//    }
+//    @include media($desktop-sm-screen) {
+//        font-size: 4em;
+//    }
+//}
+//
+//h3 {
+//    font-size: 2em;
+//    line-height: 1.2em;
+//
+//    @include media($mobile-lg-screen) {
+//        font-size: 2.2em;
+//    }
+//}
+//
+//h4 {
+//    font-size: 1.4em;
+//    line-height: 1.5em;
+//    @include media($mobile-lg-screen) {
+//        font-size: 1.7em;
+//    }
+//}
+//
+//
+//h5 {
+//    font-size: 1em;
+//    line-height: 1em;
+//    @include media($mobile-lg-screen) {
+//        font-size: 1.6em;
+//    }
+//}
+//h6 {
+//    font-size: 1em;
+//    line-height: 1em;
+//    @include media($mobile-lg-screen) {
+//        font-size: 1.2em;
+//    }
+//}
+//
+//
+//a.more {
+//    font-size: 1.3em;
+//}
+//
+//p {
+//    font-size: 1.3em;
+//    color: $white;
+//    line-height: 1.5em;
+//    @include media($mobile-lg-screen) {
+//        font-size: 1.4em;
+//    }
+//}
+//h3, p{
+//    overflow: hidden;
+//    text-overflow: ellipsis;
+//}
+//article {
+//    font-family: "ff-meta-web-pro", sans-serif;
+//    line-height: 1.5em;
+//    color: $white;
+//    font-weight: normal;
+//    font-style: normal;
+//}

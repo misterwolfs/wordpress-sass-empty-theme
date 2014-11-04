@@ -1,0 +1,42 @@
+//[class*='box-'] {
+//    display: inline-block;
+//    position: relative;
+//    .content {
+//        position: relative;
+//        top: 0;
+//        bottom: 0;
+//        left: 0;
+//        right: 0;
+//        overflow: hidden;
+//        @include pad(5%);
+//    }
+//}
+//
+//.container {
+//    [class*='box-'] {
+//        margin-right: 0 !important;
+//    }
+//}
+//
+//.box-small {
+//    @include span-columns(6);
+//    @include media($mobile-lg-screen) {
+//        @include span-columns(4);
+//    }
+//    @include media($tablet-screen) {
+//        @include span-columns(3);
+//    }
+//    @include media($desktop-sm-screen) {
+//        @include span-columns(2);
+//    }
+//}
+//
+//.box-wide, .box-large {
+//    @include span-columns(12);
+//    @include media($tablet-screen) {
+//        @include span-columns(96 of 200);
+//    }
+//    @include media($desktop-sm-screen) {
+//        @include span-columns(95 of 300);
+//    }
+//}
